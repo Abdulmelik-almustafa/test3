@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ghaith trading</title>
+</head>
+
+<body>
+    <!-- الشريط العلوي -->
+    <header id="home">
+        <nav class="nav-conten">
+            <h4 class="logo">الغيث للتجارة</h4>
+            <ul class="menu-link">
+                <li><a href="#sec">نقدم لكم</a></li>
+                <li><a href="#about-us">من نحن؟</a></li>
+                <li><a href="#contact-us">تواصل معنا</a></li>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars menu"></i>
+        </nav>
+    </header>
+    <!-- تهاية الشريط -->
+    <div class="hero">
+        <h1><span>الغيث لتجارة</span> الاحذية و الالبسة الرجالي</h1>
+        <button><a href="#about-us">من نحن؟</a></button>
+        <div class="social-media">
+            <a href="https://t.me/jolatre77" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.facebook.com/Algahith?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/+905454240410" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <section class="cards-sec" id="sec">
+        <h2 class="title">نقدم لكم</h2>
+        <div class="content">
+            <div class="card">
+                <h3>الدفع عند الباب</h3>
+                <p>يتوفر الدفع عند الباب لبعض المنتجات</p>
+            </div>
+            <div class="card">
+                <h3>سرعة في الشحن</h3>
+                <p>مدة الشحن من يوم الى يومين </p>
+            </div>
+            <div class="card">
+                <h3>أجور شحن مناسبة</h3>
+                <p>يتم شحن البضائع إلى المشتري باجور رخيصة داخل جمهورية تركيا لتعاقدنا مع yurtiç kargo- mng kargo</p>
+            </div>
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <h2 class="title">من نحن؟</h2>
+        <p>شركة مختصة في صناعة وبيع الاحذية والالبسة الرجالية ماركة او بدون ماركة ذات جودة عالية نتميز بدقة المواعيد
+            وضمان جودة المنتج لنستمر معآ في تحقيق اهدافنا في السوق التركي وخارج السوق التركي.</p>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <h2 class="title">تواصل معنا</h2>
+        <div class="cont">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="info">
+                    <h3>الهاتف</h3>
+                    <p>10 04 424 545 90+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة لدى©<span>الغيث للتجارة</span></p>
+        <div class="social-media">
+            <a href="https://t.me/jolatre77" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.facebook.com/Algahith?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/+905454240410" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script>
+        let my_btn =document.querySelector(".menu");
+        let link =document.querySelectorAll(".menu-link a");
+        let menulinks =document.querySelector(".menu-link");
+
+        my_btn.onclick=function(){
+            menulinks.classList.toggle('menu-active');
+        }
+        link.forEach(function(e){
+            e.addEventListener("click", function(){
+                menulinks.classList.remove('menu-active');
+            })
+        })
+    </script>
+</body>
+
+</html>
